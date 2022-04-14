@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="static/js/jquery-3.6.0.js"></script>
+</head>
+<body>
+<h1>hhhh</h1>
+<h2>yhkkkk</h2>
+<button>dji</button>
+<script>
+    $("button").click(function (){
+        $.ajax({
+            url:"/ajax",
+            type:'post',
+            success:function (d){
+                $('h1').html("wwwwhh"+d)
+            },
+            error:function (d){
+                alert("填写有误")
+            }
+        })
+    })
+</script>
+</body>
+</html>
